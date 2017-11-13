@@ -14,7 +14,7 @@ const requestHandler = (req, res) => {
 		return
 	}
 
-  const file = req.url.match(/^\/([a-zA-Z-]+)\/?$/)[1] || 'unknown'
+  const file = req.url.match(/^\/([a-zA-Z0-9-]+)\/?$/)[1] || 'unknown'
 
   let body = [];
   req.on('data', (chunk) => {
