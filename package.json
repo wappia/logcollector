@@ -1,0 +1,11 @@
+{
+  "name": "logcollector",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:wappia/logcollector.git",
+  "author": "Mika <mika@wappia.net>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
