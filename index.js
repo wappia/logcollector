@@ -14,6 +14,11 @@ const requestHandler = (req, res) => {
 		return
 	}
 
+  if (req.method === 'GET') {
+    res.end('Nothing here, you must be lost.')
+    return
+  }
+
   const file = req.url.match(/^\/([a-zA-Z0-9-]+)\/?$/)[1] || 'unknown'
 
   let body = [];
